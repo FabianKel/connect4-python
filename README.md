@@ -28,3 +28,6 @@ python3 conecta4.py
 El juego se ejecutará en una ventana gráfica. Sigue las instrucciones que aparecerán en la pantalla para ingresar la columna en la que deseas colocar tu ficha. El juego alterna entre los turnos del jugador Rojo y del jugador Amarillo. Gana el jugador que logre conectar cuatro fichas del mismo color antes que su oponente.
 
 ¡Diviértete jugando Conecta 4!
+
+
+### Este proyecto fue creado para el curso de Algoritmos y Programación Básica en el año 2022.
