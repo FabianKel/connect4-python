@@ -1,6 +1,13 @@
 # Conecta 4 en Python
 
-Este es un juego de Conecta 4 implementado en Python utilizando la biblioteca Turtle para la interfaz gráfica. El objetivo del juego es ser el primero en conectar cuatro fichas del mismo color de forma vertical, horizontal o diagonal en un tablero de 7x6.
+Este es un juego de Conecta 4 implementado en Python utilizando la biblioteca Turtle para la interfaz gráfica. El objetivo del juego es ser el primero en conectar cuatro fichas del mismo color de forma vertical o horizontal en un tablero de 7x6.
+
+
+
+| ![image](https://github.com/FabianKel/connect4-python/assets/86095196/df99c18e-554e-4186-bb69-a4f44a2ecc35) | ![image](https://github.com/FabianKel/connect4-python/assets/86095196/5e924b16-dbf7-43ef-bc5c-06d6af592674) |
+|---|---|
+
+
 
 ## Requisitos
 
