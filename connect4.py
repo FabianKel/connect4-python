@@ -103,7 +103,7 @@ msg = "INGRESE LA COLUMNA \n(NO SE TOMARAN EN CUENTA LOS DECIMALES)"
 def turnoRojo(msg):
     #CREAR INPUT BOX
     ws = turtle.Screen()
-    ws.setup(1000,1000)
+    ws.setup(900,700)
     #PEDIR VALOR X
     x = int(turtle.numinput("TURNO ROJO",msg,minval=1,maxval=7))
     if espaciosY[x] < 6:
@@ -131,6 +131,7 @@ def turnoRojo(msg):
                 cont += 1
         if cont == 7:
             print("TABLERO LLENO \n EMPATE")
+            turtle.textinput("Mensaje","TABLERO LLENO \n EMPATE \nPresiona 'OK' para continuar")
             menu()
         else:
             print("CONTINUAR")
@@ -138,7 +139,7 @@ def turnoRojo(msg):
 def turnoAma (msg):
     #CREAR INPUT BOX
     ws = turtle.Screen()
-    ws.setup(1000,1000)
+    ws.setup(900,700)
     #PEDIR VALOR X
     x = int(turtle.numinput("TURNO AMA",msg,minval=1,maxval=7))
     if espaciosY[x] < 6:
@@ -166,6 +167,7 @@ def turnoAma (msg):
                 cont += 1
         if cont == 7:
             print("TABLERO LLENO \n EMPATE")
+            turtle.textinput("Mensaje","TABLERO LLENO \n EMPATE \nPresiona 'OK' para continuar")
             menu()
         else:
             print("CONTINUAR")
@@ -198,6 +200,7 @@ def ganaRojo():
                    #print(cont)
                     if cont == 3:
                         print("gana HORIZONTAL ROJO")
+                        turtle.textinput("Mensaje","gana HORIZONTAL ROJO \nPresiona 'OK' para continuar")
                         menu()
                         break  
                 else:
@@ -231,6 +234,7 @@ def ganaRojo():
                     #print(cont)
                     if cont == 3:
                         print("gana VERTICAL ROJO")
+                        turtle.textinput("Mensaje","gana VERTICAL ROJO \nPresiona 'OK' para continuar")
                         menu()
                         break  
                 else:
@@ -264,6 +268,7 @@ def ganaAma():
                    #print(cont)
                     if cont == 3:
                         print("gana HORIZONTAL AMARILLO")
+                        turtle.textinput("Mensaje","gana HORIZONTAL AMARILLO \nPresiona 'OK' para continuar")
                         menu()
                         break  
                 else:
@@ -297,13 +302,14 @@ def ganaAma():
                     #print(cont)
                     if cont == 3:
                         print("gana VERTICAL AMARILLO")
+                        turtle.textinput("Mensaje","gana VERTICAL AMARILLO \nPresiona 'OK' para continuar")
                         menu()
                         break  
                 else:
                     cont = 0
 def menu():
     ws = turtle.Screen()
-    ws.setup(1000,1000)
+    ws.setup(900,700)
     #PEDIR OPCION MENU
     opcion = int(turtle.numinput("DEREK ARREAGA","-------BIENVENIDO A CONECTA 4-------\n--------INGRESE 1 PARA JUGAR--------\n--------INGRESE 2 PARA SALIR--------",minval=1,maxval=2))
     crear()
@@ -314,8 +320,8 @@ def menu():
             turnoRojo(msg)
             turnoAma(msg)
     elif opcion == 2:
-        
         raise SystemExit 
+    
 menu()
           
 turtle.done()
